@@ -1,0 +1,16 @@
+body {
+  font-family: "Roboto Slab", serif;
+  background-color: whitesmoke;
+  margin: 0;
+}
+
+.title-txt {
+  font-family: "Lobster", cursive;
+  font-size: 4em;
+  text-align: center;
+}
+
+.vue-img {
+  margin: auto;
+  display: block;
+}
