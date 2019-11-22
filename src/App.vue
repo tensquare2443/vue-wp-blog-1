@@ -3,7 +3,6 @@
     <Nav></Nav>
     <router-view />
     <img class="vue-img" src="./assets/logo.png" />
-    {{ wpLocation }}
   </div>
 </template>
 
@@ -15,21 +14,11 @@ structure:
 */
 import Nav from "./components/Nav.vue";
 
-if (process.env.WP_LOCATION) {
-  var wpLocation = process.env.WP_LOCATION;
-} else {
-  wpLocation = require("./vars.js").domain;
-}
 
 export default {
   components: {
     Nav
   },
-  name: "App",
-  data() {
-    return {
-      wpLocation
-    };
-  }
+  name: "App"
 };
 </script>
