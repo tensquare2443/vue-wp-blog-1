@@ -17,6 +17,12 @@ import Nav from "./components/Nav.vue";
 
 import envVar from "./vars.js";
 
+if (process.env.WP_LOCATION) {
+  var wpLocation = process.env.WP_LOCATION;
+} else {
+  wpLocation = require("./vars.js").domain;
+}
+
 export default {
   components: {
     Nav
