@@ -3,7 +3,7 @@
     <Nav></Nav>
     <router-view />
     <img class="vue-img" src="./assets/logo.png" />
-    {{ envVar }}
+    {{ wpLocation }}
   </div>
 </template>
 
@@ -14,8 +14,6 @@ structure:
   - no user logins. is just a static display of a blog that has been made
 */
 import Nav from "./components/Nav.vue";
-
-import envVar from "./vars.js";
 
 if (process.env.WP_LOCATION) {
   var wpLocation = process.env.WP_LOCATION;
@@ -30,7 +28,7 @@ export default {
   name: "App",
   data() {
     return {
-      envVar
+      wpLocation
     };
   }
 };
