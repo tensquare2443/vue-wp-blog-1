@@ -13,24 +13,6 @@ export default {
     return {
       msg: false
     };
-  },
-  mounted() {
-    console.log("fetching");
-    fetch(
-      "https://lgl59t5jue.execute-api.us-east-1.amazonaws.com/default/testOne"
-    )
-      .then(response => {
-        console.log(response);
-        return response.json();
-      })
-      .then(json => {
-        console.log("fetched");
-        this.msg = json;
-      })
-      .catch(e => {
-        console.log(e);
-        alert(e);
-      });
   }
 };
 </script>

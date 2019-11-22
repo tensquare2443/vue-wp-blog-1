@@ -1,6 +1,6 @@
 # A Blog
 
-> a Vue.js front-end, a headless WordPress back-end
+> a Vue.js front-end, a WordPress back-end
 
 ## Build Setup
 
