@@ -3,5 +3,5 @@
 // } else {
   // key = require("../../vars").key;
 // }
-
+ 
 module.exports = { key };
