@@ -1,8 +1,5 @@
 import { apiKey } from "./getKey";
 
-console.log('fetchPostCategories');
-console.log(apiKey);
-
 export default function() {
   this.postCategoriesLoading = true;
 

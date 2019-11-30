@@ -1,9 +1,6 @@
 import { apiKey } from "./getKey";
 import formatPostAuthors from "../formatPostAuthors";
 
-console.log('fetchPosts');
-console.log(apiKey);
-
 export default function(filter, sort) {
   this.postsLoading = true;
 

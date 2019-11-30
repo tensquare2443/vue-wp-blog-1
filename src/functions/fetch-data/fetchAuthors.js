@@ -1,8 +1,5 @@
 import { apiKey } from "./getKey";
 
-console.log('fetchAuthors');
-console.log(apiKey);
-
 export default function() {
   this.authorsLoading = true;
 
