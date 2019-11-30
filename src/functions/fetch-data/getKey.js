@@ -1,7 +1,7 @@
-if (process.env.key) {
+// if (process.env.key) {
   var key = process.env.key;
-} else {
-  key = require("../../vars").key;
-}
+// } else {
+//   key = require("../../vars").key;
+// }
 
 module.exports = { key };
