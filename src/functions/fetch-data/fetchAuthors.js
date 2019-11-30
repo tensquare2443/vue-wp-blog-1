@@ -1,7 +1,7 @@
-import { key } from "./getKey";
+import { apiKey } from "./getKey";
 
 console.log('fetchAuthors');
-console.log(key);
+console.log(apiKey);
 
 export default function() {
   this.authorsLoading = true;
@@ -10,7 +10,7 @@ export default function() {
     "https://0ilwfe0343.execute-api.us-east-1.amazonaws.com/default/fetchUsers",
     {
       headers: {
-        "x-api-key": key
+        "x-api-key": apiKey
       }
     }
   )

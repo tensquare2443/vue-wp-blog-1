@@ -1,7 +1,7 @@
-import { key } from "./getKey";
+import { apiKey } from "./getKey";
 
 console.log('fetchPostCategories');
-console.log(key);
+console.log(apiKey);
 
 export default function() {
   this.postCategoriesLoading = true;
@@ -10,7 +10,7 @@ export default function() {
     "https://o25hhf9l6l.execute-api.us-east-1.amazonaws.com/default/fetchPostCategories",
     {
       headers: {
-        "x-api-key": key
+        "x-api-key": apiKey
       }
     }
   )

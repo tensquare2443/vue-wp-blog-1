@@ -1,8 +1,8 @@
-import { key } from "./getKey";
+import { apiKey } from "./getKey";
 import formatPostAuthors from "../formatPostAuthors";
 
 console.log('fetchPosts');
-console.log(key);
+console.log(apiKey);
 
 export default function(filter, sort) {
   this.postsLoading = true;
@@ -11,7 +11,7 @@ export default function(filter, sort) {
   if (filter !== this.filter) this.filter = filter;
 
   let headers = {
-    "x-api-key": key
+    "x-api-key": apiKey
   };
 
   const sortParams = {
@@ -70,7 +70,7 @@ export default function(filter, sort) {
         "https://0ilwfe0343.execute-api.us-east-1.amazonaws.com/default/fetchUsers",
         {
           headers: {
-            "x-api-key": key
+            "x-api-key": apiKey
           }
         }
       );

@@ -1,14 +1,14 @@
-import { key } from "./getKey";
+import { apiKey } from "./getKey";
 import formatPostAuthors from "../formatPostAuthors";
 
 console.log('fetchPost');
-console.log(key);
+console.log(apiKey);
 
 export default function(postId) {
   this.postLoading = true;
 
   const headers = {
-    "x-api-key": key,
+    "x-api-key": apiKey,
     "post-id": postId
   };
 
@@ -39,7 +39,7 @@ export default function(postId) {
         "https://0ilwfe0343.execute-api.us-east-1.amazonaws.com/default/fetchUsers",
         {
           headers: {
-            "x-api-key": key
+            "x-api-key": apiKey
           }
         }
       );
