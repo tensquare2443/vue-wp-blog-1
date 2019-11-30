@@ -1,6 +1,9 @@
 import { key } from "./getKey";
 import formatPostAuthors from "../formatPostAuthors";
 
+console.log('fetchPost');
+console.log(key);
+
 export default function(postId) {
   this.postLoading = true;
 
