@@ -4,4 +4,6 @@
   // key = require("../../vars").key;
 // }
 
+// var apiKey = require("../../vars").key;
+
 module.exports = { apiKey };
