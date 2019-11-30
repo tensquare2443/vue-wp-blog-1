@@ -1,4 +1,4 @@
-import { key } from "../../../vars";
+import { key } from "./getKey";
 import formatPostAuthors from "../formatPostAuthors";
 
 export default function(postId) {

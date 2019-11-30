@@ -1,4 +1,4 @@
-import { key } from "../../../vars";
+import { key } from "./getKey";
 
 export default function() {
   this.authorsLoading = true;
