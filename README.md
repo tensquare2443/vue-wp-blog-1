@@ -1,21 +1,15 @@
-# A Blog
+## Summary  
+This Vue.js-built blog template is fully manageable through the WordPress back-end admin area. So, if a writer without any technical experience wants to create a new blog post, he or she must only log in to the WordPress admin area, write the post, and publish it.  
 
-> a Vue.js front-end, a WordPress back-end
+The template is connected to its WordPress site using the 'wpSiteLocation' environment variable set in Lambda, and can be simply connected to any WordPress site by resetting that variable.  
 
-## Build Setup
+## Build Details  
+The front-end was built in Vue.js, and also relies on Vue Router.  
 
-``` bash
-# install dependencies
-npm install
+The WordPress data is fetched from the browser. Depending on what WordPress data is needed, an Amazon API Gateway endpoint is called, which points to a Lambda function. A WordPress JSON endpoint is then called from this Lambda function.  
 
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+## GitHub Repos  
+[This Lambda function fetches blog posts.](https://github.com/tensquare2443/fetch-posts_lambda-function)  
+[This Lambda function fetches a single blog post.](https://github.com/tensquare2443/fetch-post_lambda-function)  
+[This Lambda function fetches blog post categories.](https://github.com/tensquare2443/fetch-post-categories_lambda-function)  
+[This Lambda function fetches blog post authors.](https://github.com/tensquare2443/fetch-users_lambda-function)  
