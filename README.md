@@ -1,5 +1,5 @@
 ## Summary  
-This Vue.js-built blog template is fully manageable through the WordPress back-end admin area. So, if a writer without any technical experience wants to create a new blog post, he or she must only log in to the WordPress admin area, write the post, and publish it.  
+This Vue.js-built blog template is fully manageable through the WordPress back-end admin area. So, if a writer without any technical experience wants to create a new blog post, category, etc., he or she must only log in to the WordPress admin area, write the post, and publish it.  
 
 The template is connected to its WordPress site using the 'wpSiteLocation' environment variable set in Lambda, and can be simply connected to any WordPress site by resetting that variable.  
 
